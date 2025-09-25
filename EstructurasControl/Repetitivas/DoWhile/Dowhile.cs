@@ -4,27 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        Console.WriteLine("=== CÁLCULO DE SUMATORIA Y PROMEDIO ===\n");
+        int numero;
 
-        int[] numeros = { 10, 20, 30, 40, 50 };
-        int suma = 0;
-
-        Console.WriteLine("Números a procesar: " + string.Join(", ", numeros));
-        Console.WriteLine(new string('-', 30));
-
-        for (int i = 0; i < numeros.Length; i++)
+        do
         {
-            suma += numeros[i];
-            Console.WriteLine($"Iteración {i}: Suma parcial = {suma}");
-        }
+            Console.Write("Ingresa un número (10 para salir): ");
+            // Convertimos la entrada de texto a un número entero.
+            // Si la conversión falla, 'numero' será 0.
+            int.TryParse(Console.ReadLine(), out numero);
 
-        double promedio = (double)suma / numeros.Length;
-        Console.WriteLine(new string('-', 30));
-        Console.WriteLine($"Suma total: {suma}");
-        Console.WriteLine($"Promedio: {promedio:F2}");
+            // Esta línea se ejecutará al menos una vez, incluso si el usuario
+            // no ingresa un número, ya que la condición se evalúa al final.
+            Console.WriteLine($"El número que ingresaste es: {numero}\n");
+
+        } while (numero != 10); // El ciclo continuará mientras el número no sea 10.
+
+        Console.WriteLine("¡Saliste del bucle!");
     }
 }

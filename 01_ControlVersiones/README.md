@@ -1,98 +1,77 @@
-En esta carpeta se documentan los comandos básicos de Git utilizados en el proyecto, así como ejemplos y evidencias de commits, logs y flujo de ramas. El control de versiones es fundamental para organizar proyectos, evitar pérdidas de información y facilitar el trabajo en equipo.
+# 💻 Estructuras de Control y Lógica de Programación
 
-💻 COMANDOS BÁSICOS GIT
-⚙️ CONFIGURACIÓN INICIAL
-bash
-git config --global user.name "tu nombre"          # Configurar usuario (primera vez)
-git config --global user.email "tu email.com"      # Configurar email (primera vez)
-git config --global color.ui auto                  # Habilitar colores
-🚀 INICIALIZACIÓN Y ESTADO
-bash
-git init                    # Inicializar repositorio local
-git status                  # Mostrar archivos nuevos/modificados
-git add "nombre_archivo"    # Añadir archivos al área de preparación
-git add .                   # Añadir todos los archivos
-📝 COMMITS E HISTORIAL
-bash
-git commit -m "descripción"         # Registrar cambios con descripción
-git log                             # Mostrar historial de commits
-git log --oneline                   # Historial resumido
-🌐 REPOSITORIOS REMOTOS
-bash
-git clone "URL"                     # Copiar repositorio existente
-git push origin main                # Enviar cambios al servidor (GitHub)
-git pull origin main                # Traer cambios del repositorio remoto
-🌿 MANEJO DE RAMAS
-bash
-git branch "nombre_rama"            # Crear nueva rama
-git checkout "nombre_rama"          # Cambiar de rama
-git checkout -b "nombre_rama"       # Crear y cambiar a nueva rama
-git merge "nombre_rama"             # Unir ramas
-git branch -d "nombre_rama"         # Eliminar rama
-📊 ESTADOS DE ARCHIVOS
-🟢 Working Directory: Archivos modificados
+👋 ¡Bienvenido! Este repositorio documenta y organiza los **conceptos fundamentales de estructuras de control** y **lógica básica de programación** implementados en **Python** y **C#**.
 
-🟡 Staging Area: Archivos preparados para commit
+El objetivo es proporcionar ejemplos claros y funcionales para comprender el flujo de control, la toma de decisiones y las operaciones secuenciales.
 
-🔴 Repository: Cambios confirmados en historial
+---
 
-🔄 FLUJO DE TRABAJO RECOMENDADO
-Actualizar: git pull origin main
+## 📂 Estructura del Repositorio
 
-Crear rama: git checkout -b feature/nueva
+La carpeta principal `EstructurasControl` contiene ejemplos clasificados por tipo, abarcando condicionales, estructuras repetitivas y operaciones secuenciales.
 
-Desarrollar: Realizar cambios en código
+### ⚙️ 1. Condicionales (Toma de Decisiones)
 
-Preparar: git add .
+Se exploran las diferentes formas de estructurar la lógica de decisión, desde la simple verificación hasta el anidamiento complejo.
 
-Confirmar: git commit -m "mensaje descriptivo"
+| Carpeta | Descripción | Ejemplos en |
+| :--- | :--- | :--- |
+| **Simples** | Implementación básica de la estructura `if-else`. | `Simples.py`, `Simples.cs` |
+| **Doble** | Uso de múltiples ramas de decisión (`if-elif-else`). | `Doble.py`, `Doble.cs` |
+| **Anidado** | Condicionales dentro de otros condicionales (doble verificación). | `Anidado.py`, `Anidado.cs` |
+| **Múltiples** | Ejemplos más complejos con anidamiento múltiple y uso de `elif`. | `Multiples.py`, `Multiples.cs` |
 
-Publicar: git push origin feature/nueva
+### 🔄 2. Repetitivas (Bucles)
 
-Fusionar: Crear Pull Request y hacer merge
+Se muestran las estructuras utilizadas para ejecutar bloques de código de forma repetida, facilitando la automatización de tareas.
 
-📝 CONVENCIONES DE COMMITS
-✨ feat: Nueva funcionalidad
+| Carpeta | Estructura | Ejemplos en |
+| :--- | :--- | :--- |
+| **For** | Bucles controlados por un contador o iteración sobre una secuencia. | `For.cs` |
+| **While** | Bucles que se ejecutan mientras una condición es verdadera. | `While.cs` |
+| **DoWhile** | Bucles que garantizan al menos una ejecución. (Específico de C#). | `DoWhile.cs` |
 
-🐛 fix: Corrección de error
+### 🔢 3. Secuenciales (Operaciones Básicas)
 
-📚 docs: Documentación
+Contiene ejemplos de algoritmos que ejecutan una serie de pasos en orden estricto, sin saltos ni repeticiones.
 
-🎨 style: Formato y estilo
+| Carpeta | Ejemplos Clave | Lenguajes |
+| :--- | :--- | :--- |
+| **Csharp** | `PromedioCSharp...` | C# |
+| **Python** | `Promedio.py`, `Temperatura.py` | Python |
 
-♻️ refactor: Refactorización
+---
 
-✅ test: Pruebas y testing
+## 🛠️ Herramientas de Desarrollo y Control de Versiones (Git)
 
-🚨 MANEJO DE ERRORES
-bash
-git restore archivo.ext              # Descartar cambios locales
-git restore --staged archivo.ext     # Quitar del área de preparación
-git commit --amend                   # Modificar último commit
-git revert [hash]                    # Revertir commit específico
-💡 BUENAS PRÁCTICAS
-🔄 Hacer pull frecuentemente para mantener sincronización
+La gestión de este proyecto se realiza mediante **Git** y **GitHub**. El control de versiones es fundamental para organizar proyectos, evitar pérdidas de información y facilitar el trabajo en equipo.
 
-🌿 Trabajar en ramas separadas por funcionalidad
+### 💻 COMANDOS BÁSICOS GIT
 
-✅ Testear cambios antes de hacer commit
+| Comando | Descripción |
+| :--- | :--- |
+| `git status` | Muestra archivos nuevos/modificados. |
+| `git add .` | Añade todos los archivos al área de preparación. |
+| `git commit -m "descripción"` | Registra cambios en el historial local. |
+| `git push origin main` | Envía cambios al repositorio remoto (GitHub). |
+| `git pull origin main` | Trae y fusiona los cambios del repositorio remoto. |
+| `git checkout -b "nombre_rama"` | Crea y cambia a una nueva rama de trabajo. |
 
-📤 Hacer push regularmente para respaldo remoto
+### 📝 CONVENCIONES DE COMMITS
 
-📝 Escribir mensajes claros y descriptivos en commits
+Utilizamos convenciones para mantener un historial de commits claro y legible:
 
-📚 RECURSOS ADICIONALES
-Documentación oficial de Git
+| Prefijo | Tipo de Cambio |
+| :--- | :--- |
+| ✨ `feat:` | Nueva funcionalidad. |
+| 🐛 `fix:` | Corrección de un error. |
+| 📚 `docs:` | Cambios de documentación. |
+| ♻️ `refactor:` | Reestructuración de código sin cambiar la funcionalidad. |
 
-GitHub Guides
+---
 
-Git Cheat Sheet
+## 👩‍💻 Autor
 
-Visual Git Guide
+**Gianfranco Alejandro Silva Aguirre** - Estudiante de la carrera de Ing. Sistemas Computacionales
 
-👩‍💻 AUTOR
-Gianfranco Alejandro Silva Aguirre - Estudiante de la carrera de Ing. Sistemas Computacionales
-
-📅 FECHA
-20/09/2025
-
+**Fecha de Creación/Actualización:** 20/09/2025

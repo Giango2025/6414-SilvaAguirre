@@ -1,40 +1,47 @@
-## Estructuras de Control en Programación
+# ⚙️ Estructuras de Control en Python y C\#
 
-Esta carpeta contiene ejemplos y ejercicios sobre las estructuras de control fundamentales en programación, que determinan el flujo de ejecución de un programa.
-# 🏗️ Estructura de Carpetas
-1. Secuenciales/
+Esta carpeta contiene la implementación y ejemplos prácticos de las **estructuras de control** fundamentales que dictan el flujo de ejecución de un programa.
 
-Programas con ejecución lineal donde las instrucciones se ejecutan en orden una tras otra.
-2. Condicionales/
+Hemos trabajado con los dos tipos principales: **Condicionales** (Toma de decisiones) y **Repetitivas** (Bucles/Iteración).
 
-# Estructuras que permiten tomar decisiones en el código:
+---
 
-    Simples/: if (una condición)
+## 🚦 1. Condicionales (Toma de Decisiones)
 
-    Dobles/: if-else (dos alternativas)
+Las estructuras condicionales permiten ejecutar un bloque de código u otro basándose en si una condición es verdadera o falsa.
 
-    Anidadas/: condicionales dentro de condicionales
+| Carpeta | Descripción | Objetivo |
+| :--- | :--- | :--- |
+| **Simples/** | **`if-else`** básico. | Verificar una única condición principal. |
+| **Doble/** | Uso de **`if-elif-else`**. | Manejar múltiples caminos de decisión mutuamente excluyentes. |
+| **Anidado/** | **`if`** dentro de otro **`if`**. | Implementar lógica de doble verificación o jerarquía de requisitos (e.g., login y permisos). |
+| **Multiples/** | **Anidamiento complejo** con *`elif`*. | Cubrir escenarios detallados con varios niveles de filtrado lógico. |
 
-    Multiples/: switch/elif (múltiples casos)
+### Ejemplos Clave:
 
-3. Repetitivas/
+* `Anidado.py` y `Anidado.cs`: Demuestran la validación de un requisito general seguido de un detalle específico.
 
-# Bucles para repetir código:
+---
 
-    For/: for (iteraciones determinadas)
+## 🔁 2. Estructuras Repetitivas (Bucles)
 
-    While/: while (mientras condición sea verdadera)
+Estas estructuras permiten automatizar tareas al ejecutar un bloque de código de forma repetida hasta que se cumpla una condición de salida.
 
-    DoWhile/: do-while (ejecuta al menos una vez)
+| Estructura | Archivos de Ejemplo | Lenguaje |
+| :--- | :--- | :--- |
+| **For** | `For.cs` | C\# |
+| **While** | `While.cs` | C\# |
+| **DoWhile** | `DoWhile.cs` | C\# (Garantiza al menos una ejecución) |
 
-💻 Lenguajes
+---
 
-# Cada categoría incluye ejemplos en:
+## 🔢 3. Secuenciales
 
-    C# (.cs)
+Contiene los ejercicios básicos donde las instrucciones se ejecutan una tras otra sin saltos:
 
-    Python (.py)
+* **Python:** `Promedio.py`, `Temperatura.py`
+* **C\#:** `PromedioCSharp...`
 
-🚀 Uso
+---
 
-Navega por las carpetas para encontrar ejemplos específicos de cada tipo de estructura de control.
+[⬅️ Volver al README principal](/)
